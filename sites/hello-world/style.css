@@ -1,0 +1,428 @@
+body {
+    text-align: center;
+    background-color: lightcyan;
+}
+
+body li {
+	-webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 9.5%;
+  padding: 0px;
+  color: white;
+  text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+  border: 2px solid #666;
+  position: absolute;
+  list-style-type: none;
+	-webkit-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+.hello li {
+	top: 20%;
+	margin-left: -10%;
+}
+
+.html li {
+	top: 40%;
+	left: 10%;
+	margin-left: -10%;
+}
+
+#letters li:nth-of-type(1) {
+    /* Animation to spin and move the sphere */
+	-webkit-animation: spin 1500ms linear 4, moveLetter1 5s linear 1;
+	-moz-animation: spin 1500ms linear 4, moveLetter1 5s linear 1;
+	-ms-animation: spin 1500ms linear 4, moveLetter1 5s linear 1;
+	animation: spin 1500ms linear 4, moveLetter1 5s linear 1;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-play-state: paused;
+  animation-fill-mode: forwards;
+	animation-play-state: paused;
+}
+
+#letters li:nth-of-type(2) {
+    /* Animation to spin and move the sphere */
+	-webkit-animation: spin 1500ms linear 4, moveLetter2 5s linear 1;
+	-moz-animation: spin 1500ms linear 4, moveLetter2 5s linear 1;
+	-ms-animation: spin 1500ms linear 4, moveLetter2 5s linear 1;
+	animation: spin 1500ms linear 4, moveLetter2 5s linear 1;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-play-state: paused;
+  animation-fill-mode: forwards;
+	animation-play-state: paused;
+}
+
+#letters li:nth-of-type(3) {
+    /* Animation to spin and move the sphere */
+	-webkit-animation: spin 1500ms linear 4, moveLetter3 5s linear 1;
+	-moz-animation: spin 1500ms linear 4, moveLetter3 5s linear 1;
+	-ms-animation: spin 1500ms linear 4, moveLetter3 5s linear 1;
+	animation: spin 1500ms linear 4, moveLetter3 5s linear 1;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-play-state: paused;
+  animation-fill-mode: forwards;
+	animation-play-state: paused;
+}
+
+#letters li:nth-of-type(4) {
+    /* Animation to spin and move the sphere */
+	-webkit-animation: spin 1500ms linear 4, moveLetter4 5s linear 1;
+	-moz-animation: spin 1500ms linear 4, moveLetter4 5s linear 1;
+	-ms-animation: spin 1500ms linear 4, moveLetter4 5s linear 1;
+	animation: spin 1500ms linear 4, moveLetter4 5s linear 1;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-play-state: paused;
+  animation-fill-mode: forwards;
+	animation-play-state: paused;
+}
+
+#letters li:nth-of-type(5) {
+    /* Animation to spin and move the sphere */
+	-webkit-animation: spin 1500ms linear 4, moveLetter5 5s linear 1;
+	-moz-animation: spin 1500ms linear 4, moveLetter5 5s linear 1;
+	-ms-animation: spin 1500ms linear 4, moveLetter5 5s linear 1;
+	animation: spin 1500ms linear 4, moveLetter5 5s linear 1;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-play-state: paused;
+  animation-fill-mode: forwards;
+	animation-play-state: paused;
+}
+
+#letters li:nth-of-type(6) {
+    /* Animation to spin and move the sphere */
+	-webkit-animation: spin 1500ms linear 4, moveLetter6 5s linear 1;
+	-moz-animation: spin 1500ms linear 4, moveLetter6 5s linear 1;
+	-ms-animation: spin 1500ms linear 4, moveLetter6 5s linear 1;
+	animation: spin 1500ms linear 4, moveLetter6 5s linear 1;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-play-state: paused;
+  animation-fill-mode: forwards;
+	animation-play-state: paused;
+}
+
+#letters li:nth-of-type(7) {
+    /* Animation to spin and move the sphere */
+	-webkit-animation: spin 1500ms linear 4, moveLetter7 5s linear 1;
+	-moz-animation: spin 1500ms linear 4, moveLetter7 5s linear 1;
+	-ms-animation: spin 1500ms linear 4, moveLetter7 5s linear 1;
+	animation: spin 1500ms linear 4, moveLetter7 5s linear 1;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-play-state: paused;
+  animation-fill-mode: forwards;
+	animation-play-state: paused;
+}
+
+#letters li:nth-of-type(8) {
+    /* Animation to spin and move the sphere */
+	-webkit-animation: spin 1500ms linear 4, moveLetter8 5s linear 1;
+	-moz-animation: spin 1500ms linear 4, moveLetter8 5s linear 1;
+	-ms-animation: spin 1500ms linear 4, moveLetter8 5s linear 1;
+	animation: spin 1500ms linear 4, moveLetter8 5s linear 1;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-play-state: paused;
+  animation-fill-mode: forwards;
+	animation-play-state: paused;
+}
+
+#letters li:nth-of-type(9) {
+    /* Animation to spin and move the sphere */
+	-webkit-animation: spin 1500ms linear 4, moveLetter9 5s linear 1;
+	-moz-animation: spin 1500ms linear 4, moveLetter9 5s linear 1;
+	-ms-animation: spin 1500ms linear 4, moveLetter9 5s linear 1;
+	animation: spin 1500ms linear 4, moveLetter9 5s linear 1;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-play-state: paused;
+  animation-fill-mode: forwards;
+	animation-play-state: paused;
+}
+
+#letters li:nth-of-type(10) {
+    /* Animation to spin and move the sphere */
+	-webkit-animation: spin 1500ms linear 4, moveLetter10 5s linear 1;
+	-moz-animation: spin 1500ms linear 4, moveLetter10 5s linear 1;
+	-ms-animation: spin 1500ms linear 4, moveLetter10 5s linear 1;
+	animation: spin 1500ms linear 4, moveLetter10 5s linear 1;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-play-state: paused;
+  animation-fill-mode: forwards;
+	animation-play-state: paused;
+}
+
+body li .height_fix {
+    margin-top: 100%;
+}
+body li .content {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 100%;
+    width: 100%;
+    font-size: 350%;
+    margin-top: -1em;
+    text-align: center;
+    font-family: 'Eater', cursive;
+}
+
+/* More precise align for the 'D' letter */
+ul:last-child li:last-child .content { margin-top: -1.09em; }
+
+button {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    -webkit-box-shadow:    0 8px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, .35);
+    -moz-box-shadow: 0 8px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, .35);
+    box-shadow: 0 8px 0 #c5376d, 0 15px 20px rgba(0, 0, 0, .35);
+    -webkit-transition: -webkit-box-shadow .1s ease-in-out;
+    -moz-transition: -moz-box-shadow .1s ease-in-out;
+    -o-transition: -o-box-shadow .1s ease-in-out;
+    transition: box-shadow .1s ease-in-out;
+    font-size: 50px;
+    color: #fff;
+    background: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+/* Removes this annoying button border in Firefox */
+button::-moz-focus-inner { padding: 0; border: 0; }
+
+button span {
+    font-family: 'Flavors', cursive;
+    background-color: #ec528d;
+    display: inline-block;
+    line-height: 1;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(hsla(338, 90%, 80%, .8)), to(hsla(338, 90%, 70%, .2)));
+    background-image: -webkit-linear-gradient(hsla(338, 90%, 80%, .8), hsla(338, 90%, 70%, .2));
+    background-image: -moz-linear-gradient(hsla(338, 90%, 80%, .8), hsla(338, 90%, 70%, .2));
+    background-image: -o-linear-gradient(hsla(338, 90%, 80%, .8), hsla(338, 90%, 70%, .2));
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    -webkit-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, .15);
+    -moz-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, .15);
+    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, .15);
+    text-shadow: 0 -1px 1px rgba(175, 49, 95, .7);
+    -webkit-transition: background-color .2s ease-in-out, -webkit-transform .1s ease-in-out;
+    -moz-transition: background-color .2s ease-in-out, -moz-transform .1s ease-in-out;
+    -o-transition: background-color .2s ease-in-out, -o-transform .1s ease-in-out;
+    transition: background-color .2s ease-in-out, transform .1s ease-in-out;
+}
+
+button:hover span {
+    background-color: #ec6a9c;
+    text-shadow: 0 -1px 1px rgba(175, 49, 95, .9), 0 0 5px rgba(255, 255, 255, .8);
+}
+
+button:active, #button:focus {
+    -webkit-box-shadow:    0 8px 0 #c5376d, 0 12px 10px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 8px 0 #c5376d, 0 12px 10px rgba(0, 0, 0, .3);
+    box-shadow:    0 8px 0 #c5376d, 0 12px 10px rgba(0, 0, 0, .3);
+}
+
+button:active span {
+    -webkit-transform: translate(0, 4px);
+    -moz-transform: translate(0, 4px);
+    -o-transform: translate(0, 4px);
+    transform: translate(0, 4px);
+}
+
+/* Spinning the sphere using key frames */
+@-ms-keyframes spin {
+  from { -ms-transform: rotate(0deg); }
+  to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+  from { -moz-transform: rotate(0deg); }
+  to { -moz-transform: rotate(360deg); }
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+  from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); }
+}
+
+/* Move letter #1 */
+@-moz-keyframes moveLetter1 {
+  0%   { left: 0px; }
+  100% { left: 35%; }
+}
+@-ms-keyframes moveLetter1 {
+  0%   { left: 0px; }
+  100% { left: 35%; }
+}
+@keyframes moveLetter1 {
+  0%   { left: 0px; }
+  100% { left: 35%; }
+}
+@-webkit-keyframes moveLetter1 {
+  0%   { left: 0px; }
+  100% { left: 35%; }
+}
+
+/* Move letter #2 */
+@-moz-keyframes moveLetter2 {
+  0%   { left: 0px; }
+  100% { left: 45%; }
+}
+@-ms-keyframes moveLetter2 {
+  0%   { left: 0px; }
+  100% { left: 45%; }
+}
+@keyframes moveLetter2 {
+  0%   { left: 0px; }
+  100% { left: 45%; }
+}
+@-webkit-keyframes moveLetter2 {
+  0%   { left: 0px; }
+  100% { left: 45%; }
+}
+
+/* Move letter #3 */
+@-moz-keyframes moveLetter3 {
+  0%   { left: 0px; }
+  100% { left: 55%; }
+}
+@-ms-keyframes moveLetter3 {
+  0%   { left: 0px; }
+  100% { left: 55%; }
+}
+@keyframes moveLetter3 {
+  0%   { left: 0px; }
+  100% { left: 55%; }
+}
+@-webkit-keyframes moveLetter3 {
+  0%   { left: 0px; }
+  100% { left: 55%; }
+}
+
+/* Move letter #4 */
+@-moz-keyframes moveLetter4 {
+  0%   { left: 0px; }
+  100% { left: 65%; }
+}
+@-ms-keyframes moveLetter4 {
+  0%   { left: 0px; }
+  100% { left: 65%; }
+}
+@keyframes moveLetter4 {
+  0%   { left: 0px; }
+  100% { left: 65%; }
+}
+@-webkit-keyframes moveLetter4 {
+  0%   { left: 0px; }
+  100% { left: 65%; }
+}
+
+/* Move letter #5 */
+@-moz-keyframes moveLetter5 {
+  0%   { left: 0px; }
+  100% { left: 75%; }
+}
+@-ms-keyframes moveLetter5 {
+  0%   { left: 0px; }
+  100% { left: 75%; }
+}
+@keyframes moveLetter5 {
+  0%   { left: 0px; }
+  100% { left: 75%; }
+}
+@-webkit-keyframes moveLetter5 {
+  0%   { left: 0px; }
+  100% { left: 75%; }
+}
+
+/* Move letter #6 */
+@-moz-keyframes moveLetter6 {
+  0%   { left: 0px; }
+  100% { left: 35%; }
+}
+@-ms-keyframes moveLetter6 {
+  0%   { left: 0px; }
+  100% { left: 35%; }
+}
+@keyframes moveLetter6 {
+  0%   { left: 0px; }
+  100% { left: 35%; }
+}
+@-webkit-keyframes moveLetter6 {
+  0%   { left: 0px; }
+  100% { left: 35%; }
+}
+
+/* Move letter #7 */
+@-moz-keyframes moveLetter7 {
+  0%   { left: 0px; }
+  100% { left: 45%; }
+}
+@-ms-keyframes moveLetter7 {
+  0%   { left: 0px; }
+  100% { left: 45%; }
+}
+@keyframes moveLetter7 {
+  0%   { left: 0px; }
+  100% { left: 45%; }
+}
+@-webkit-keyframes moveLetter7 {
+  0%   { left: 0px; }
+  100% { left: 45%; }
+}
+
+/* Move letter #8 */
+@-moz-keyframes moveLetter8 {
+  0%   { left: 0px; }
+  100% { left: 55%; }
+}
+@-ms-keyframes moveLetter8 {
+  0%   { left: 0px; }
+  100% { left: 55%; }
+}
+@keyframes moveLetter8 {
+  0%   { left: 0px; }
+  100% { left: 55%; }
+}
+@-webkit-keyframes moveLetter8 {
+  0%   { left: 0px; }
+  100% { left: 55%; }
+}
+
+/* Move letter #9 */
+@-moz-keyframes moveLetter9 {
+  0%   { left: 0px; }
+  100% { left: 65%; }
+}
+@-ms-keyframes moveLetter9 {
+  0%   { left: 0px; }
+  100% { left: 65%; }
+}
+@keyframes moveLetter9 {
+  0%   { left: 0px; }
+  100% { left: 65%; }
+}
+@-webkit-keyframes moveLetter9 {
+  0%   { left: 0px; }
+  100% { left: 65%; }
+}
+
+/* Move letter #10 */
+@-moz-keyframes moveLetter10 {
+  0%   { left: 0px; }
+  100% { left: 75%; }
+}
+@-ms-keyframes moveLetter10 {
+  0%   { left: 0px; }
+  100% { left: 75%; }
+}
+@keyframes moveLetter10 {
+  0%   { left: 0px; }
+  100% { left: 75%; }
+}
+@-webkit-keyframes moveLetter10 {
+  0%   { left: 0px; }
+  100% { left: 75%; }
+}
