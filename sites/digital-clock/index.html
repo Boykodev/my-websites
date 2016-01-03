@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Digital Clock</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body onload="setClock()">
+<p id="title">DIGITAL CLOCK</p>
+<a id="home" href="http://www.boykodev.com" target="_blank">Home</a>
+<div id="clock">
+	<span id="time"></span>
+</div>
+<script>
+	var t = setInterval(function () { setClock() }, 1000);
+
+	function addZero(i) {
+	    if (i < 10) {
+	        i = "0" + i;
+	    }
+	    return i;
+	}
+
+	function setClock() {
+		var today = new Date();
+	    var h = today.getHours();
+	    var m = today.getMinutes();
+	    var s = today.getSeconds();
+
+	    m = addZero(m);
+	    s = addZero(s);
+		document.getElementById("time").innerHTML = h + ":" + m + ":" + s;
+	}
+</script>
+</body>
+</html>
