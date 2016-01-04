@@ -1,0 +1,42 @@
+body {
+	background-color: orange;
+	-webkit-transition: background-color 1s;
+	-moz-transition: background-color 1s;
+	-o-transition: background-color 1s;
+	transition: background-color 1s;
+}
+
+button {
+	position:absolute;
+	top:50%; left:50%;
+	height: 10%;
+	min-height: 75px;
+	margin-top: -5%;
+	min-width: 200px;
+	width:20%;
+	margin-left:-10%;
+	line-height: 3em;
+	text-align: center;
+	border-radius: 25px;
+	border: none;
+	box-shadow: 0px 0px 50px 5px white;
+	background-color: orange;
+}
+
+button:active {
+	-webkit-transform: scale(0.95, 0.95);
+    -moz-transform: scale(0.95, 0.95);
+    -o-transform: scale(0.95, 0.95);
+	transform: scale(0.95, 0.95);
+}
+
+button:hover span {
+	text-shadow: 0 0 10px white;
+}
+
+span {
+	font-family: 'Fontdiner Swanky', cursive;
+	font-size: 30px;
+	color: white;
+	text-shadow: 0 0 2px white;
+}
