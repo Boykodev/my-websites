@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Button Collecting</title>
+	<link rel="stylesheet" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Fredericka+the+Great' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<ul>
+	<li class="top" id="info">
+		<span>
+			Buttons collected: <span id="btn-count"></span>
+		</span>
+	</li>
+	<li class="top" id="help" onmouseover="showHelp()" onmouseout="hideHelp()">
+		<a onmouseover="showHelp()" onmouseout="hideHelp()">?</a>
+	</li>
+	<li class="top" id="home">
+		<a href="http://www.boykodev.com/" target="_blank">Home</a>
+	</li>
+</ul>
+<span id="info-text"></span>
+<button id="button" onclick="buttonPicked()">Button</button>
+<script src="script.js"></script>
+</body>
+</html>
