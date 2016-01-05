@@ -1,0 +1,90 @@
+body {
+	margin: 0px;
+}
+
+button {
+	position:absolute;
+	top:50%; left:50%;
+	height: 10%;
+	min-height: 75px;
+	margin-top: -5%;
+	min-width: 150px;
+	width: 15%;
+	margin-left:-7.5%;
+	line-height: 3em;
+	text-align: center;
+	border-radius: 25px;
+	border: none;
+	padding-top: 25px;
+	box-shadow: 0px 0px 50px 5px white;
+	background: -webkit-linear-gradient(#e52d27, #b31217);
+    background: -o-linear-gradient(#e52d27, #b31217);
+    background: -moz-linear-gradient(#e52d27, #b31217);
+    background: linear-gradient(#e52d27, #b31217);
+}
+
+button:active {
+	-webkit-transform: scale(0.95, 0.95);
+    -moz-transform: scale(0.95, 0.95);
+    -o-transform: scale(0.95, 0.95);
+	transform: scale(0.95, 0.95);
+}
+
+button:hover span {
+	text-shadow: 0 0 10px white;
+}
+
+button span {
+	font-family: sans-serif;
+	font-size: 60px;
+	color: white;
+	text-shadow: 0 0 2px white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 5px;
+    overflow: hidden;
+    min-width: 600px;
+    background: -webkit-linear-gradient(#e52d27, #b31217);
+    background: -o-linear-gradient(#e52d27, #b31217);
+    background: -moz-linear-gradient(#e52d27, #b31217);
+    background: linear-gradient(#e52d27, #b31217);
+}
+
+#info {
+    float: left;
+}
+
+#home {
+    float: right;
+}
+
+#help {
+    float: right;
+    margin-left: 15px;
+}
+
+li span {
+	color: white;
+	font-size: 30px;
+	font-family: 'Roboto', sans-serif;
+}
+
+li a {
+	color: white;
+	font-size: 30px;
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+}
+
+li a:hover {
+	text-shadow: 0 0 10px white;
+}
+
+#info-text {
+	float: right;
+	margin-right: 1%;
+	color: #e52d27;
+}
