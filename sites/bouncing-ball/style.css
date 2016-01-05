@@ -1,0 +1,67 @@
+body {
+	background-image: url("assets/basketball-court.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+
+#wrap {
+	height: 800px;
+	width: 500px;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+#ball {
+	display: block;
+	position:absolute;
+	border: none;
+	border-radius: 50%;
+	height: 150px;
+	width: 150px;
+	margin: 0;
+	background-image: url('assets/basketball.png');
+	background-size: 150% 150%;
+	background-position: 50% 50%;
+}
+
+ul {
+	list-style-type: none;
+    margin: 0px;
+}
+
+li {
+	float: right;
+	color: white;
+}
+
+#help {
+	margin-right: 10px;
+	margin-left: 20px;
+}
+
+li span, li a {
+	color: white;
+	font-size: 36px;
+	font-family: 'Fredericka the Great', cursive; 
+}
+
+li a {
+	text-decoration: none;
+}
+
+li span:hover, li a:hover {
+	text-shadow: 0 0 8px white;
+}
+
+#info-text pre {
+	position: relative;
+	float: right;
+	left: 150px;
+	top: 40px;
+	color: white;
+	font-size: 20px;
+	font-family: 'Fredericka the Great', cursive; 
+	text-shadow: 0 0 8px white;
+}

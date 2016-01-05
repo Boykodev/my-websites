@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bouncing Ball</title>
+	<link rel="stylesheet" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Fredericka+the+Great' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<ul>
+	<li id="help"><span onmouseover="showHelp()" onmouseout="hideHelp()">?</span></li>
+	<li id="home"><a href="http://www.boykodev.com/">HOME</a></li>
+</ul>
+<span id="info-text"></span>
+<span id="ball" onmousedown="draggingStart()" onmouseup="draggingStop()" onclick="startBall()"></span>
+
+<script src="script.js"></script>
+</body>
+</html>
