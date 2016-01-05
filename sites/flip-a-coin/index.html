@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="/css/reset.css">
+	<link rel="stylesheet" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+	<title>Flip a Coin</title>
+</head>
+<body>
+
+<ul>
+	<li class="top" id="info"><span>Can't decide? - Flip a Coin!</span></li>
+	<li class="top" id="help" onmouseover="showHelp()" onmouseout="hideHelp()">
+		<a onmouseover="showHelp()" onmouseout="hideHelp()">?</a>
+	</li>
+	<li class="top" id="home">
+		<a href="http://www.boykodev.com/" target="_blank">Home</a>
+	</li>
+</ul>
+
+<span id="info-text"></span>
+
+<div class="flip-container">
+	<div class="flipper" onclick="flipCoin()">
+		<div class="front">
+			<span class="heads">HEADS</span>
+		</div>
+		<div class="back">
+			<span class="tails">TAILS</span>
+		</div>
+	</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+body {
+	background-color: azure;
+}
+
+.flip-container {
+	margin: 50px auto;
+	perspective: 1000px;
+}
+
+.flip-container, .front, .back {
+	width: 300px;
+	height: 300px;
+}
+
+.flip-container .flipper {
+	-webkit-transform-origin: 100% 150px;
+	-webkit-transition-timing-function: ease-out;
+	transform-origin: 100% 150px;
+	transition-timing-function: ease-out;
+}
+
+.flipper {
+	-webkit-transition: 3s;
+	-webkit-transform-style: preserve-3d;
+	transition: 3s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+.front, .back {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+	border-radius: 50%;
+	background-color: gold;
+	border-width: 10px;
+	border-color: orange;
+	border-style: solid;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.front {
+	z-index: 2;
+	/* Firefox support */
+	transform: rotateX(0deg);
+}
+
+.back {
+	-webkit-transform: rotateX(180deg);
+	transform: rotateX(180deg);
+}
+
+.heads, .tails {
+	font-family: 'Press Start 2P', cursive;
+	position: absolute;
+	font-size: 50px;
+	color: orange;
+}
+
+.heads {
+	top: 40%; left: 21px;
+}
+
+.tails {
+	top: 40%; left: 7%;
+}
+
+ul {
+    overflow: hidden;
+    min-width: 750px;
+    padding-top: 3px;
+    box-shadow: 0px 3px 10px orange;
+    background: -webkit-linear-gradient(gold, orange);
+    background: -o-linear-gradient(gold, orange);
+    background: -moz-linear-gradient(gold, orange);
+    background: linear-gradient(gold, orange);
+}
+
+#info {
+    float: left;
+}
+
+#home {
+    float: right;
+}
+
+#help {
+    float: right;
+    margin-left: 15px;
+}
+
+.top {
+	padding: 8px;
+}
+
+.top span {
+	color: white;
+	font-size: 20px;
+	font-family: 'Press Start 2P', cursive;
+}
+
+.top a {
+	color: white;
+	font-size: 20px;
+	font-family: 'Press Start 2P', cursive;
+	text-decoration: none;
+}
+
+.top a:hover {
+	text-shadow: 0 0 10px white;
+}
+
+#info-text pre {
+	font-family: 'Press Start 2P', cursive;
+	float: right;
+	margin-right: 1%;
+	margin-top: 15px;
+	line-height: 25px;
+	color: orange;
+}
