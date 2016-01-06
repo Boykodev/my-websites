@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Solar System</title>
+	<link rel="stylesheet" href="/css/reset.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body>
+<ul>
+	<li class="top" id="title">
+		<span>Solar System</span>
+	</li>
+	<li class="top" id="help">
+		<span onmouseover="showHelp()" onmouseout="hideHelp()">?</span>
+	</li>
+	<li class="top" id="home">
+		<a href="http://www.boykodev.com/" target="_blank">Home</a>
+	</li>
+</ul>
+<span id="info">
+	<pre>
+		Click on planets
+		to see more
+		information.
+	</pre>
+</span>
+
+<iframe id="frame" name="frame"></iframe>
+<button id="back" onclick="goBack()">BACK</button>
+<script src="script.js"></script>
+</body>
+</html>

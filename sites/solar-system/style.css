@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'Star Jedi';
+    src: url('/fonts/star-jedi/star-jedi.ttf');
+}
+
+body {
+    background: url("assets/stars-texture.jpg");
+}
+
+#frame, #back {
+    position: absolute;
+    top: 50%; left: 50%;
+    margin-left: -427px;
+    margin-top: -337px;
+    border: 2px #2487de solid;
+}
+
+#frame {
+    width: 854px;
+    height: 674px;
+    box-shadow: 0px 0px 20px #05fafa;
+}
+
+#back {
+    width: 100px;
+    height: 50px;
+    background: rgba(36, 135, 222, 0.5);
+    z-index: 10;
+    color: white;
+    font-size: 25px;
+    font-family: 'Star Jedi';
+    text-shadow: 0px 0px 10px black;
+}
+
+ul {
+    overflow: hidden;
+    padding: 0px 20px 5px 15px;
+    min-width: 820px;
+    box-shadow: 0px 3px 5px rgba(36, 135, 222, 0.5);
+    background: -webkit-linear-gradient(#05fafa, #2487de);
+    background: -o-linear-gradient(#05fafa, #2487de);
+    background: -moz-linear-gradient(#05fafa, #2487de);
+    background: linear-gradient(#05fafa, #2487de);
+    text-shadow: 0px 0px 10px black;
+}
+
+#title { float: left; }
+
+#home, #help, #info { float: right; }
+
+#help { margin-left: 15px; }
+
+#info { display: none; }
+
+#info pre {
+    color: white;
+    margin-top: 10px;
+    line-height: 25px;
+    font-size: 20px;
+    font-family: 'Star Jedi';
+}
+
+li span {
+    color: white;
+    font-size: 30px;
+    font-family: 'Star Jedi';
+}
+
+li a {
+    color: white;
+    font-size: 30px;
+	text-decoration: none;
+    font-family: 'Star Jedi';
+}
+
+li a:hover, #help:hover, #back:hover { text-shadow: 0px 0px 3px white; }
