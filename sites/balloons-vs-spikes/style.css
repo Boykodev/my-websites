@@ -1,0 +1,63 @@
+body {
+    background: url("assets/clouds-seamless.jpg");
+    height:100vh;
+}
+
+#canvas {
+    height: 92vh;
+}
+
+#spikes {
+    height: 3vh;
+    background-image: url("assets/spike.png");
+    background-size: auto 100%;
+}
+
+.balloon {
+    position: absolute;
+}
+
+ul {
+    overflow: hidden;
+    padding-left: 20px;
+    padding-right: 15px;
+    min-width: 500px;
+    box-shadow: 0px 3px 5px rgba(36, 135, 222, 0.5);
+    background: -webkit-linear-gradient(#05fafa, #2487de);
+    background: -o-linear-gradient(#05fafa, #2487de);
+    background: -moz-linear-gradient(#05fafa, #2487de);
+    background: linear-gradient(#05fafa, #2487de);
+    text-shadow: 0px 0px 10px black;
+}
+
+#title { float: left; }
+
+#home, #help, #info { float: right; }
+
+#help { margin-left: 15px; }
+
+#info { display: none; }
+
+#info pre {
+    color: white;
+    margin-top: 30px;
+    line-height: 25px;
+    font-size: 20px;
+    text-shadow: 0px 0px 10px black;
+    font-family: 'Permanent Marker', cursive;
+}
+
+li span {
+    color: white;
+    font-size: 30px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+li a {
+    color: white;
+    font-size: 30px;
+	text-decoration: none;
+    font-family: 'Permanent Marker', cursive;
+}
+
+li a:hover, #help:hover { text-shadow: 0px 0px 3px white; }

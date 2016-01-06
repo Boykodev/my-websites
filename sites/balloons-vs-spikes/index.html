@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Balloons vs Spikes</title>
+	<link rel="stylesheet" href="/css/reset.css">
+	<link rel="stylesheet" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="script.js" defer></script>
+</head>
+<body>
+<ul class="top">
+	<li class="top" id="title">
+		<span>Balloons vs Spikes</span>
+	</li>
+	<li class="top" id="help">
+		<span onmouseover="showHelp()" onmouseout="hideHelp()">?</span>
+	</li>
+	<li class="top" id="home">
+		<a href="http://www.boykodev.com/" target="_blank">Home</a>
+	</li>
+</ul>
+<span id="info">
+	<pre>
+		Click anywhere
+		to create
+		a balloon!
+	</pre>
+</span>
+<div id="spikes"></div>
+<div id="canvas"></div>
+</body>
+</html>
