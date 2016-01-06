@@ -1,0 +1,118 @@
+body {
+    background-color: azure;
+}
+
+#frame {
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 900px;
+    height: 600px;
+    margin-left: -450px;
+    margin-top: -300px;
+
+    border: 2px #49d686 solid;
+}
+
+.tile {
+    position: absolute;
+    perspective: 1000px;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+/* Start of "Flipping" styles */
+
+.front, .back {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 128px;
+    height: 128px;
+}
+
+.front {
+    z-index: 2;
+    /* Firefox support */
+    transform: rotateY(0deg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.back {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80% 80%;
+}
+
+/* End of "Flipping" styles */
+
+ul {
+    overflow: hidden;
+    padding: 2px 10px;
+    min-width: 910px;
+    box-shadow: 0px 3px 5px rgba(73, 214, 134, 0.5);
+    background: -webkit-linear-gradient(#049d67, #49d686);
+    background: -o-linear-gradient(#049d67, #49d686);
+    background: -moz-linear-gradient(#049d67, #49d686);
+    background: linear-gradient(#049d67, #49d686);
+}
+
+#info {
+    float: left;
+}
+
+#home {
+    float: right;
+}
+
+#help {
+    float: right;
+    margin-left: 15px;
+}
+
+li span {
+	color: azure;
+	font-size: 30px;
+    font-family: 'Chewy', cursive;
+}
+
+li a {
+	color: azure;
+	font-size: 30px;
+	text-decoration: none;
+    font-family: 'Chewy', cursive;
+}
+
+li a:hover {
+	text-shadow: 0 0 10px white;
+}
+
+#info-text pre {
+	float: right;
+	margin-right: 1%;
+    margin-top: 10px;
+	color: #49d686;
+    line-height: 25px;
+    font-size: 20px;
+    font-family: 'Chewy', cursive;
+}
+
+#result {
+    position: absolute;
+    width: 100%;
+    color: #49d686;
+    text-align: center;
+    margin: 10px auto 0px auto;
+    line-height: 30px;
+    font-size: 25px;
+    font-family: 'Chewy', cursive;
+}
