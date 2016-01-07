@@ -1,0 +1,61 @@
+body {
+	background: url("assets/grey-texture.gif");
+}
+
+#ping-pong {
+	position: absolute;
+	top: 50%; left: 50%;
+	width: 604px;
+	height: 404px;
+	margin-top: -202px;
+	margin-left: -302px;
+	border: 2px white solid;
+	background-color: #29AB87;
+	-webkit-box-shadow: 15px 15px 15px rgba(0, 0, 0, .35);
+    -moz-box-shadow: 15px 15px 15px rgba(0, 0, 0, .35);
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, .35);
+    -webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#net {
+	width: 10px;
+	height: 400px;
+	position: absolute;
+	left: 50%;
+	margin-left: -5px;
+	background-color: white;
+}
+
+#ball {
+	background-color: white;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	position: absolute;
+}
+
+#start {
+	background-color: #29AB87;
+	border: 1px white solid;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	position: absolute;
+	text-align: center;
+	top: 50%; left: 50%;
+	color: white;
+	font-family: 'Play', sans-serif;
+}
+
+#start h3 {
+	padding-top: 5px;
+	padding-bottom: 10px;
+	font-size: 300%;
+	font-weight: bold;
+}
+
+ #start p { font-size: 175%; }
+
+ #start p:last-child { font-size: 275%; }
