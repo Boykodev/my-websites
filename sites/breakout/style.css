@@ -1,0 +1,90 @@
+body { background: url("assets/stars-texture.jpg"); }
+
+#breakout {
+	position: absolute;
+	top: 50%; left: 50%;
+	width: 404px;
+	height: 604px;
+	margin-top: -302px;
+	margin-left: -202px;
+	border: 2px #e52d27 solid;
+	-webkit-box-shadow: 0px 0px 30px white;
+    -moz-box-shadow: 0px 0px 30px white;
+    box-shadow: 0px 0px 30px white;
+    -webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	z-index: 5;
+	background-color: black;
+}
+
+#start {
+	background: -webkit-linear-gradient(#e52d27, #b31217);
+    background: -o-linear-gradient(#e52d27, #b31217);
+    background: -moz-linear-gradient(#e52d27, #b31217);
+    background: linear-gradient(#e52d27, #b31217);
+	border: 2px white solid;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	position: absolute;
+	text-align: center;
+	top: 50%; left: 50%;
+	color: white;
+	display: none;
+	z-index: 1;
+	font-family: 'Play', sans-serif;
+}
+
+#start h3 {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 250%;
+	font-weight: bold;
+}
+
+#start p { font-size: 150%; }
+
+#ball {
+	-webkit-box-shadow: 0px 0px 10px white;
+	-moz-box-shadow: 0px 0px 10px white;
+	box-shadow: 0px 0px 10px white;
+	display: none;
+}
+
+#paddle {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 0px 0px 20px white;
+	-moz-box-shadow: 0px 0px 20px white;
+	box-shadow: 0px 0px 20px white;
+	background-color: white;
+}
+
+#total-lives, #total-bricks {
+	bottom: 0px;
+	position: absolute;
+	background: -webkit-linear-gradient(#e52d27, #b31217);
+    background: -o-linear-gradient(#e52d27, #b31217);
+    background: -moz-linear-gradient(#e52d27, #b31217);
+    background: linear-gradient(#e52d27, #b31217);
+    font-family: 'Play', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    display: none;
+}
+
+#total-lives {
+	-webkit-border-radius: 0px 10px 0px 5px;
+	-moz-border-radius: 0px 10px 0px 5px;
+	border-radius: 0px 10px 0px 5px;
+}
+
+#total-bricks {
+	-webkit-border-radius: 10px 0px 5px 0px;
+	-moz-border-radius: 10px 0px 5px 0px;
+	border-radius: 10px 0px 5px 0px;
+	right: 0;
+}
