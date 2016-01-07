@@ -1,0 +1,72 @@
+@font-face {
+	font-family: Digital-7;
+	src: url('/fonts/digital-7/digital-7.ttf');
+}
+
+body {
+	background: url("assets/operators-seamless.jpg");
+}
+
+#calculator {
+	position: absolute;
+	top: 50%; left: 50%;
+	width: 450px;
+	height: 640px;
+	margin-top: -320px;
+	margin-left: -225px;
+	box-sizing: border-box;
+	border: 1px grey solid;
+	background: url("assets/grey-texture.gif");
+	-webkit-box-shadow: 15px 15px 15px rgba(0, 0, 0, .35);
+    -moz-box-shadow: 15px 15px 15px rgba(0, 0, 0, .35);
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, .35);
+    -webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+#display {
+	margin: 5px;
+	width: 435px;
+	height: 100px;
+	line-height: 100px;
+	padding-top: 0px;
+	text-align: right;
+	font-size: 80px;
+	font-family: Digital-7;
+	overflow: hidden;
+}
+
+#buttons {
+	margin-left: 9px;
+}
+
+#zero {
+	width: 208px;
+	height: 100px;
+}
+
+.btn {
+	width: 100px;
+	height: 100px;
+	font-family: Digital-7;
+	font-size: 50px;
+	margin: 2px;
+}
+
+#cancel, #plus-minus, #percent, #obelus,
+#times-sign, #minus, #plus, #equals, #period {
+	padding: 0px;
+}
+
+#cancel, #obelus {
+	font-size: 55px;
+	line-height: 55px;
+}
+
+#plus-minus { padding-bottom: 5px; }
+
+#plus, #minus, #equals, #period {
+	font-size: 100px;
+	line-height: 100px;
+}
