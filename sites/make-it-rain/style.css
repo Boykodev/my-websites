@@ -1,0 +1,127 @@
+body {
+    background-color: ghostwhite;
+    overflow: hidden;
+}
+
+#cloud {
+    width: 312.5px;
+    height: 200px;
+    margin: auto;
+    background-image: url('assets/cloud.png');
+    background-size: 100% 100%;
+}
+
+#drop-box {
+    margin: auto;
+    width: 200px;
+    height: 80vh;
+}
+
+#duck {
+    position: absolute;
+    right: 5px;
+    bottom: 0px;
+    width: 100px;
+    height: 100px;
+    background-image: url('assets/duck.png');
+    background-size: 100% 100%;
+}
+
+#water {
+    background-image: -webkit-linear-gradient(#3498db, #2980b9);
+    background-image: -moz-linear-gradient(#3498db, #2980b9);
+    background-image: -ms-linear-gradient(#3498db, #2980b9);
+    background-image: -o-linear-gradient(#3498db, #2980b9);
+    background-image: linear-gradient(#3498db, #2980b9);
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    height: 10px;
+}
+
+#make-rain, #stop-rain {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(lightgrey, grey);
+  background-image: -moz-linear-gradient(lightgrey, grey);
+  background-image: -ms-linear-gradient(lightgrey, grey);
+  background-image: -o-linear-gradient(lightgrey, grey);
+  background-image: linear-gradient(lightgrey, grey);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: 'Permanent Marker', cursive;
+  text-shadow: 0px 0px 5px black;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  position: absolute;
+}
+
+#make-rain {
+    margin: 50px 0px 0px 30px;
+}
+
+#stop-rain {
+    margin: 120px 0px 0px 37px;
+}
+
+#make-rain:hover {
+  background-image: -webkit-linear-gradient(#3498db, #2980b9);
+  background-image: -moz-linear-gradient(#3498db, #2980b9);
+  background-image: -ms-linear-gradient(#3498db, #2980b9);
+  background-image: -o-linear-gradient(#3498db, #2980b9);
+  background-image: linear-gradient(#3498db, #2980b9);
+}
+
+#stop-rain:hover {
+  background-image: -webkit-linear-gradient(#e52d27, #b31217);
+  background-image: -moz-linear-gradient(#e52d27, #b31217);
+  background-image: -ms-linear-gradient(#e52d27, #b31217);
+  background-image: -o-linear-gradient(#e52d27, #b31217);
+  background-image: linear-gradient(#e52d27, #b31217);
+}
+
+ul {
+    overflow: hidden;
+    padding-left: 20px;
+    padding-right: 15px;
+    min-width: 500px;
+    background: -webkit-linear-gradient(#05fafa, #2487de);
+    background: -o-linear-gradient(#05fafa, #2487de);
+    background: -moz-linear-gradient(#05fafa, #2487de);
+    background: linear-gradient(yellow, orange);
+    text-shadow: 0px 0px 10px black;
+}
+
+#title { float: left; }
+
+#home, #help, #info { float: right; }
+
+#help { margin-left: 15px; }
+
+#info { display: none; }
+
+#info pre {
+    color: gold;
+    margin-top: 10px;
+    line-height: 30px;
+    font-size: 30px;
+    text-shadow: 0px 0px 10px white;
+    font-family: 'Permanent Marker', cursive;
+}
+
+li span {
+    color: white;
+    font-size: 30px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+li a {
+    color: white;
+    font-size: 30px;
+	text-decoration: none;
+    font-family: 'Permanent Marker', cursive;
+}
+
+li a:hover, #help:hover { text-shadow: 0px 0px 3px white; }

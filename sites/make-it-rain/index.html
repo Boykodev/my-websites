@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Make it Rain!</title>
+	<link rel="stylesheet" href="/css/reset.css">
+	<link rel="stylesheet" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="script.js" defer></script>
+</head>
+<body>
+<ul class="top">
+	<li class="top" id="title">
+		<span>Make it Rain!</span>
+	</li>
+	<li class="top" id="help">
+		<span onmouseover="showHelp()" onmouseout="hideHelp()">?</span>
+	</li>
+	<li class="top" id="home">
+		<a href="http://www.boykodev.com/" target="_blank">Home</a>
+	</li>
+</ul>
+<span id="info">
+	<pre>
+		Press a button
+		to make it rain!
+	</pre>
+</span>
+<button id="make-rain">Make Rain</button>
+<button id="stop-rain">Stop Rain</button>
+<div id="cloud"></div>
+<div id="drop-box"></div>
+<div id="duck"></div>
+<div id="water"></div>
+</body>
+</html>
