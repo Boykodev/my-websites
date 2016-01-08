@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Lorem Ipsum</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='http://fonts.googleapis.com/css?family=Nosifer|Eater|Finger+Paint|Fontdiner+Swanky|Roboto|Pacifico|UnifrakturMaguntia|Press+Start+2P' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+<div class="btn-group-vertical fonts-panel">
+	<div class="text-size-outer">
+		<div class="text-size-inner">
+			<button class="btn btn-warning" onclick="fontUp()">
+				<span class="glyphicon glyphicon-upload"></span>
+				<span>Bigger font</span>
+			</button>
+		</div>
+		<div class="text-size-inner">
+			<button class="btn btn-warning" onclick="fontDown()">
+				<span class="glyphicon glyphicon-download"></span>
+				<span>Smaller font</span>
+			</button>
+		</div>
+	</div>
+	<button class="btn btn-primary" onclick="setFont(this)">
+		<span id="roboto">Roboto</span>
+	</button>
+
+	<button class="btn btn-primary" onclick="setFont(this)">
+		<span id="pacifico">Pacifico</span>
+	</button>
+	<button class="btn btn-primary" onclick="setFont(this)">
+		<span id="eater">Eater</span>
+	</button>
+	<button class="btn btn-primary" onclick="setFont(this)">
+		<span id="nosifer">Nosifer</span>
+	</button>
+	<button class="btn btn-primary" onclick="setFont(this)">
+		<span id="finger-paint">Finger Paint</span>
+	</button>
+	<button class="btn btn-primary" onclick="setFont(this)">
+		<span id="fontdiner-swanky">Fontdiner Swanky</span>
+	</button>
+	<button class="btn btn-primary" onclick="setFont(this)">
+		<span id="unifraktur-maguntia">UnifrakturMaguntia</span>
+	</button>
+	<button class="btn btn-primary" onclick="setFont(this)">
+		<span id="press-start">Press Start 2P</span>
+	</button>
+
+	<button class="btn btn-danger" onclick="clearText()">
+		<span class="glyphicon glyphicon-remove-sign"></span>
+		<span>Clear text</span>
+	</button>
+</div>
+<div class="showcase">
+	<label class="showcase-label" for="text">Enter your text here:</label>
+	<textarea class="form-control showcase-text" rows="10" id="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
+</div>
+</body>
+</html>

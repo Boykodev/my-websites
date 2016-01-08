@@ -1,0 +1,55 @@
+body {
+	background: url('assets/notepad-seamless.png');
+}
+
+.fonts-panel {
+	width: 50%;
+	display: block;
+	margin: 10px auto 0px auto;
+}
+
+.fonts-panel button { height: 38.5px; }
+
+.text-size-inner { width: 50%; }
+
+.text-size-inner:first-child { float: left; }
+
+.text-size-inner:last-child { float: right; }
+
+.text-size-inner button { width: 100%; }
+
+.text-size-inner:first-child button {
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+.text-size-inner:last-child button {
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+
+.showcase {
+	font-family: 'Roboto';
+	width: 75%;
+	margin: auto;
+}
+
+.showcase-label {
+	display: block;
+	text-align: center;
+	font-size: 25px;
+	margin: 21px auto 10px auto;
+}
+
+.showcase-text {
+	font-size: 14px;
+}
+
+#roboto { font-family: Roboto; }
+#pacifico { font-family: Pacifico; }
+#eater { font-family: Eater; }
+#nosifer { font-family: 'Nosifer';}
+#finger-paint { font: 18px 'Finger Paint'; }
+#fontdiner-swanky { font-family: 'Fontdiner Swanky'; }
+#unifraktur-maguntia { font: 20px UnifrakturMaguntia; }
+#press-start { font-family: 'Press Start 2P'; }
