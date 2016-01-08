@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Day in History</title>
+	<link rel="stylesheet" href="/css/reset.css">
+	<link rel="stylesheet" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="script.js" defer></script>
+</head>
+<body>
+<div class="wrap">
+	<div class="header">Day in History</div>
+	<p>Pick a date to see historical events</p>
+	<form>
+		<label for="month">Month: </label>
+		<input type="text" id="month" maxlength="2">
+		<label for="day">Day: </label>
+		<input type="text" id="day" maxlength="2">
+		<button type="button" class="btn">Get</button>
+	</form>
+	<iframe id="frame"></iframe>
+</div>
+</body>
+</html>
