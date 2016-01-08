@@ -21,3 +21,10 @@ Order the websites were created:
 15. Calculator
 16. Ping-Pong
 17. Breakout
+18. Click Master
+19. Duck Hunt
+20. Birthday Calculator
+21. Day in History
+22. WebKit Filters
+23. Lorem Ipsum
+24. Random Word
