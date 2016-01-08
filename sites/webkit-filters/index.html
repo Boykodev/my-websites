@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WebKit Filters</title>
+	<link rel="stylesheet" href="/css/reset.css">
+	<link rel="stylesheet" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Lora:400,700italic' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="script.js" defer></script>
+</head>
+<body>
+<div id="file">Upload file</div>
+<input type="file" onchange="previewFile()">
+<div class="wrap">
+	<img id="image" src="assets/grumpy-cat.jpg" width="800" height="600">
+</div><br>
+<div class="slider">
+	<label for="blur">Blur: </label>
+	<input type="range" id="blur" oninput="set('blur', this.value + 'px');" value="0" step="1" min="0" max="10">
+	<label for="hue-rotate">Hue-Rotate: </label>
+	<input type="range" id="hue-rotate" oninput="set('hue-rotate', this.value + 'deg');" value="0" step="1" min="0" max="360">
+	<label for="grayscale">Grayscale: </label>
+	<input type="range" id="grayscale" oninput="set('grayscale', this.value + '%');" value="0" step="1" min="0" max="100">
+	<br><br>
+	<label for="invert">Invert: </label>
+	<input type="range" id="invert" oninput="set('invert', this.value + '%');" value="0" step="1" min="0" max="100">
+	<label for="saturate">Saturate: </label>
+	<input type="range" id="saturate" oninput="set('saturate', this.value);" value="1" step="1" min="1" max="10">
+	<label for="sepia">Sepia: </label>
+	<input type="range" id="sepia" oninput="set('sepia', this.value + '%');" value="0" step="1" min="0" max="100">
+	<br><br>
+	<label for="opacity">Opacity: </label>
+	<input type="range" id="opacity" oninput="setOpacity(this.value);" value="0" step="1" min="0" max="100">
+	<label for="brightness">Brightness: </label>
+	<input type="range" id="brightness" oninput="set('brightness', this.value);" value="1" step="0.1" min="1" max="2">
+	<label for="contrast">Contrast: </label>
+	<input type="range" id="contrast" oninput="set('contrast', this.value + '%');" value="100" step="1" min="100" max="200">
+</div>
+
+</body>
+</html>
