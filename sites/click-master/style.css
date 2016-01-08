@@ -1,0 +1,201 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    background-color: lightblue;
+}
+
+.start {
+    text-align: center;
+    font-family: 'Play', sans-serif;
+}
+
+.start h3 {
+    font-weight: bold;
+    font-size: 350%;
+}
+
+.start p {
+    font-size: 150%;
+    line-height: 50px;
+}
+
+.start button {
+    font-size: 200%;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    padding: 15px;
+    background-color: orange;
+}
+
+.start button:active {
+    -webkit-transform: scale(0.95, 0.95);
+    -moz-transform: scale(0.95, 0.95);
+    -o-transform: scale(0.95, 0.95);
+    transform: scale(0.95, 0.95);
+}
+
+.start button:hover {
+    text-shadow: 0 0 10px white;
+}
+
+.clicks {
+    position: absolute;
+    font-size: 750%;
+    z-index: 301;
+    text-align: center;
+    width: 300px; height: 150px;
+    left: 50%; top: 50%;
+    margin-left: -150px;
+    margin-top: -75px;
+    display: none;
+    font-family: 'Play', sans-serif;
+}
+
+.wrapper {
+  position: relative;
+  margin: 40px auto;
+  background: lightblue;
+}
+
+.wrapper, .wrapper * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 500px;
+  height: 500px;
+}
+
+.wrapper .pie {
+  width: 50%;
+  height: 100%;
+  -webkit-transform-origin: 100% 50%;
+  -o-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  position: absolute;
+  background: green;
+  border: 20px solid rgba(0,0,0,0.5);
+}
+
+.wrapper .spinner {
+  border-radius: 100% 0 0 100% / 50% 0 0 50%;
+  z-index: 200;
+  border-right: none;
+  -webkit-animation-name: rotation, progress;
+  -webkit-animation-duration: 30s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: rotation, progress;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.wrapper .filler {
+  border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+  left: 50%;
+  opacity: 0;
+  z-index: 100;
+  -webkit-animation-name: opacity, progress;
+  -webkit-animation-duration: 30s;
+  -webkit-animation-timing-function: steps(1, end), linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: reverse, normal;
+  animation-name: opacity, progress;
+  animation-duration: 30s;
+  animation-timing-function: steps(1, end), linear;
+  animation-iteration-count: infinite;
+  animation-direction: reverse, normal;
+  border-left: none;
+}
+
+.wrapper .mask {
+  position: absolute;
+  width: 53%;
+  height: 103%;
+  margin-top: -3px;
+  margin-left: -15px;
+  background: inherit;
+  z-index: 300;
+  opacity: 1;
+  -webkit-animation: opacity 30s steps(1, end) infinite;
+  animation: opacity 30s steps(1, end) infinite;
+}
+
+.wrapper .spinner,
+.wrapper .filler,
+.wrapper .mask {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes progress {
+  0% {
+    background: green;
+  }
+  50% {
+    background: yellow;
+  }
+  100% {
+    background: red;
+  }
+}
+
+@keyframes progress {
+  0% {
+    background: green;
+  }
+  50% {
+    background: yellow;
+  }
+  100% {
+    background: red;
+  }
+}
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+  }
+}
