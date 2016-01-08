@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Random Word</title>
+	<link rel="stylesheet" href="/css/reset.css">
+	<link rel="stylesheet" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Londrina+Outline' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="script.js" defer></script>
+</head>
+<body>
+<h2 class="header">Flip the Card to Get<br>the Next Random Word</h2>
+<div class="flip-container">
+	<div class="flipper">
+		<div class="front">
+			<div class="top" onclick="flipCard('top')"></div>
+			<div class="bottom" onclick="flipCard('bottom')"></div>
+			<span class="word">RANDOM WORD</span>
+		</div>
+		<div class="back"></div>
+	</div>
+</div>
+</body>
+</html>
