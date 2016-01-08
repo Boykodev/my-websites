@@ -1,0 +1,114 @@
+body {
+    background-color: pink;
+}
+
+#header {
+    width: 700px;
+    height: 100px;
+    margin: auto;
+    margin-top: 25px;
+    text-align: center;
+}
+
+#header span {
+    color: rgb(255, 255, 255);
+    letter-spacing: 3px;
+    position: relative;
+    text-shadow: 2px 2px 0px #fff;
+    border: 0px none rgb(255, 255, 255);
+    font: bold 64px 'Unkempt', cursive;
+    outline: rgb(255, 255, 255) none 0px;
+}
+
+p {
+    width: 600px;
+    height: 100px;
+    margin: auto;
+    margin-top: 25px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 3px;
+    text-align: center;
+    text-shadow: rgb(153, 153, 153) 0px 1px 0px, rgb(136, 136, 136) 0px 2px 0px,
+    rgb(119, 119, 119) 0px 3px 0px, rgb(102, 102, 102) 0px 4px 0px, rgb(85, 85, 85) 0px 5px 0px,
+    rgb(68, 68, 68) 0px 6px 0px, rgb(51, 51, 51) 0px 7px 0px, rgb(20, 20, 55) 0px 8px 7px;
+    perspective-origin: 248px 140px;
+    transform-origin: 248px 140px;
+    border: 0px none rgb(255, 255, 255);
+    font: 40px 'Unkempt', cursive;
+    outline: rgb(255, 255, 255) none 0px;
+}
+
+form {
+    width: 600px;
+    height: 50px;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+form label {
+    font: 35px 'Unkempt', cursive;
+    letter-spacing: 2px;
+    text-shadow: rgb(153, 153, 153) 0px 1px 0px, rgb(136, 136, 136) 0px 2px 0px,
+    rgb(119, 119, 119) 0px 3px 0px, rgb(102, 102, 102) 0px 4px 0px, rgb(85, 85, 85) 0px 5px 0px,
+    rgb(68, 68, 68) 0px 6px 0px, rgb(51, 51, 51) 0px 7px 0px, rgb(20, 20, 55) 0px 8px 7px;
+}
+
+form input {
+    box-sizing: content-box;
+    color: rgb(40, 45, 51);
+    height: 42px;
+    text-align: center;
+    vertical-align: bottom;
+    width: 64px;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 0px #fff;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    border-top: 0px none rgb(40, 45, 51);
+    border-right: 0px none rgb(40, 45, 51);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.498039);
+    border-left: 0px none rgb(40, 45, 51);
+    font: bold 40px 'Unkempt', cursive;
+    margin: 0px 16px 0px 0px;
+    outline: rgb(40, 45, 51) none 0px;
+}
+
+.btn {
+    width: 100px;
+    border-radius: 25px;
+    border: none;
+    color: black;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    font: bold 200%'Unkempt', cursive;
+    background-color: white;
+}
+
+.btn:active {
+    -webkit-transform: scale(0.95, 0.95);
+    -moz-transform: scale(0.95, 0.95);
+    -o-transform: scale(0.95, 0.95);
+    transform: scale(0.95, 0.95);
+}
+
+.btn:hover {
+    text-shadow: 0 0 10px white;
+}
+
+.result {
+    width: 600px;
+    height: 100px;
+    margin: auto;
+    margin-top: 25px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 3px;
+    text-align: center;
+    text-shadow: rgb(153, 153, 153) 0px 1px 0px, rgb(136, 136, 136) 0px 2px 0px,
+    rgb(119, 119, 119) 0px 3px 0px, rgb(102, 102, 102) 0px 4px 0px, rgb(85, 85, 85) 0px 5px 0px,
+    rgb(68, 68, 68) 0px 6px 0px, rgb(51, 51, 51) 0px 7px 0px, rgb(20, 20, 55) 0px 8px 7px;
+    perspective-origin: 248px 140px;
+    transform-origin: 248px 140px;
+    border: 0px none rgb(255, 255, 255);
+    font: 40px 'Unkempt', cursive;
+    outline: rgb(255, 255, 255) none 0px;
+    display: none;
+}
