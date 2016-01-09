@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tower of Hanoi</title>
+	<link rel="stylesheet" href="/css/reset.css">
+	<link rel="stylesheet" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Cutive+Mono|Cherry+Swash' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="script.js" defer></script>
+</head>
+<body>
+<div class="clock"></div>
+<div class="floor"></div>
+<div class="table">
+	<div class="game">
+		<div class="restart-menu">
+			<button id="diff-3" class="btn">3 Disks</button>
+			<button id="diff-4" class="btn">4 Disks</button>
+			<button id="diff-5" class="btn">5 Disks</button>
+			<br><button id="restart" class="btn">Restart</button><br>
+			<button id="diff-6" class="btn">6 Disks</button>
+			<button id="diff-7" class="btn">7 Disks</button>
+			<button id="diff-8" class="btn">8 Disks</button>
+		</div>
+		<div class="restart">R</div>
+		<div class="board">
+			<div id="peg1" class="pegs"></div>
+			<div id="peg2" class="pegs"></div>
+			<div id="peg3" class="pegs"></div>
+		</div>
+		<div class="help-text">
+			<pre>
+				The objective of the puzzle is to move the entire stack to another rod.
+				Only one disk can be moved at a time.
+				No disk may be placed on top of a smaller disk.
+				Click 'R' to change difficulty or restart.
+			</pre>
+		</div>
+		<div class="help">?</div>
+	</div>
+</div>
+</body>
+</html>
