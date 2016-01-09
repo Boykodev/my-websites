@@ -1,0 +1,64 @@
+body { background-color: #2F4F4F; }
+
+.header {
+	text-align: center;
+	font: 50px 'Permanent Marker';
+	letter-spacing: 5px;
+	font-weight: bold;
+	color: white;
+	margin-top: 5px;
+	margin-bottom: 50px;
+}
+
+.cells {
+	position: absolute;
+	text-align: center;
+	font: 60px 'Permanent Marker';
+	width: 100px; height: 100px;
+	color: white;
+	cursor: pointer;
+	border: 3px solid white;
+	background-color: transparent;
+}
+
+.cell-0, .cell-1, .cell-2 { border-left: 0px; }
+.cell-0, .cell-3, .cell-6 { border-top: 0px; }
+.cell-6, .cell-7, .cell-8 { border-right: 0px; }
+.cell-2, .cell-5, .cell-8 { border-bottom: 0px; }
+
+.game {
+	width: 300px;
+	height: 300px;
+	margin: auto;
+}
+
+.result {
+	font: 60px 'Permanent Marker';
+	letter-spacing: 5px;
+	text-align: center;
+	color: white;
+	margin-top: 10px;
+}
+
+.btn {
+    width: 200px;
+    border-radius: 25px;
+    border: none;
+    color: #2F4F4F;
+    padding: 0px;
+    height: 40px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    font: 25px 'Permanent Marker';
+    background-color: white;
+}
+
+.btn:active {
+    -webkit-transform: scale(0.95, 0.95);
+    -moz-transform: scale(0.95, 0.95);
+    -o-transform: scale(0.95, 0.95);
+    transform: scale(0.95, 0.95);
+}
+
+.btn:hover { text-shadow: 0 0 10px white; }
