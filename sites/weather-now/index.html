@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather Now</title>
+	<link rel="stylesheet" href="/css/reset.css">
+	<link rel="stylesheet" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="/libs/simple-weather/jquery.simpleWeather.js"></script>
+	<script src="script.js" defer></script>
+</head>
+<body>
+<div id="header">Weather Now</div>
+<div id="weather" style="display:none"></div><br><hr>
+<div class="search-container">
+	<form id="search">
+		<label for="location">Location:&nbsp</label>
+		<input type="text" id="location">
+		<button type="button" id="show" class="btn">Show</button>
+	</form>
+	<button class="js-geolocation" style="display: none;">Use Your Location</button>
+</div>
+</body>
+</html>
