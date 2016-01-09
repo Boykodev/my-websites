@@ -1,0 +1,60 @@
+body {
+    height: 100%;
+    background: -webkit-linear-gradient(#4cb8c4, #3cd3ad);
+    background: -o-linear-gradient(#4cb8c4, #3cd3ad);
+    background: -moz-linear-gradient(#4cb8c4, #3cd3ad);
+    background: linear-gradient(#4cb8c4, #3cd3ad);
+    background-attachment: fixed;
+}
+
+.guessinator {
+	width: 560px; height: 548px;
+	margin: 5px 0px 0px 5px;
+	background: url('assets/guessinator.png');
+}
+
+.bubble {
+	position: absolute;
+	margin: 44px 0px 0px 48px;
+	width: 220px;
+	height: 110px;
+}
+
+.bubble pre {
+	font: 25px 'Lobster';
+	text-align: center;
+}
+
+.btn-containter {
+	position: absolute;
+	margin-left: 50px;
+	margin-top: 275px;
+	text-align: center;
+	width: 150px;
+	height: 273px;
+}
+
+.btn {
+	width: 150px;
+    border-radius: 50px;
+    border: 5px solid #b11c21;
+    color: black;
+    padding: 0px 0px 10px 0px;
+    height: 100px;
+    font: 70px 'Lobster';
+    background-color: white;
+}
+
+.btn:active {
+    -webkit-transform: scale(0.95, 0.95);
+    -moz-transform: scale(0.95, 0.95);
+    -o-transform: scale(0.95, 0.95);
+    transform: scale(0.95, 0.95);
+}
+
+.btn:hover { text-shadow: 0 0 10px white; }
+
+#play { font-size: 60px; }
+
+#yes { margin-bottom: 15px; display: none; }
+#no { display: none; }
