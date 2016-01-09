@@ -28,3 +28,9 @@ Order the websites were created:
 22. WebKit Filters
 23. Lorem Ipsum
 24. Random Word
+25. Guess the Number
+26. Guessinator
+27. Weather Now
+28. Tower of Hanoi
+29. Tower of Hanoi Solver
+30. Tic Tac Toe
