@@ -1,0 +1,64 @@
+html {
+	height: 100%;
+    background: -webkit-linear-gradient(#eae4d8, #a6a6a6);
+    background: -o-linear-gradient(#eae4d8, #a6a6a6);
+    background: -moz-linear-gradient(#eae4d8, #a6a6a6);
+    background: linear-gradient(#eae4d8, #a6a6a6);
+    background-attachment: fixed;
+}
+
+#header {
+	width: 300px; margin: 15px auto 15px auto;
+	font: 60px 'Allerta Stencil', sans-serif;
+	font-style: italic;
+	color: #583f34;
+}
+
+.tv {
+	width: 711px; height: 450px; margin: auto;
+	background-image: url('assets/tv.png');
+}
+
+#screen {
+	position: relative;
+	z-index: -1;
+	width: 435px; height: 330px;
+	left: 85px; top: 30px;
+}
+
+.pixel {
+	position: absolute;
+	width: 1px; height: 1px;
+}
+
+button {
+	position: relative;
+	width: 60px; height: 60px;
+	background-color: #684f44;
+	border-color: #252423;
+	color: #252423;
+	font-family: 'Allerta Stencil', sans-serif;
+	-webkit-box-shadow: 0px 0px 15px #252423;
+    -moz-box-shadow: 0px 0px 15px #252423;
+    box-shadow: 0px 0px 15px #252423;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+
+button::-moz-focus-inner { padding: 0; border: 0; }
+
+.btn-container {
+	position: relative;
+	text-align: center;
+	width: 109px; height: 156px;
+	left: 562px; bottom: 135px;
+}
+
+#mono {
+	margin-top: 10px;
+	margin-bottom: 15px;
+	font-size: 14px;
+}
+
+#color { font-size: 15px; }
