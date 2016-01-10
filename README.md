@@ -34,3 +34,10 @@ Order the websites were created:
 28. Tower of Hanoi
 29. Tower of Hanoi Solver
 30. Tic Tac Toe
+31. No Signal
+32. Matrix Code
+33. 4th of July
+34. The Fan
+35. RGB to HEX
+36. Color Pickers
+37. Star Wars Intro
