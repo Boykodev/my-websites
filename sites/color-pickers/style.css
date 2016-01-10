@@ -1,0 +1,38 @@
+body {
+	height: 100%;
+    background: -webkit-linear-gradient(#4cb8c4, #3cd3ad);
+    background: -moz-linear-gradient(#4cb8c4, #3cd3ad);
+    background: -o-linear-gradient(#4cb8c4, #3cd3ad);
+    background: linear-gradient(#4cb8c4, #3cd3ad);
+    background-attachment: fixed;
+}
+
+header {
+	color: white;
+	text-align: center;
+	white-space: nowrap;
+	letter-spacing: 5px;
+	font: 75px 'Chewy', cursive;
+	text-shadow: 0px 0px 3px black, 0px 0px 3px black, 0px 0px 3px black;
+}
+
+.cp-container {
+	position: absolute;
+	width: 712px; height: 176px;
+	left: 50%; top: 50%;
+	margin-left: -356px;
+	margin-top: -88px;
+}
+
+.cp-left-container {
+	position: absolute;
+	width: 356px;
+	height: 176px;
+}
+
+.cp-right-container {
+	position: absolute;
+	margin-left: 356px;
+	width: 356px;
+	height: 176px;
+}
