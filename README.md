@@ -41,3 +41,10 @@ Order the websites were created:
 35. RGB to HEX
 36. Color Pickers
 37. Star Wars Intro
+38. Teleprompter
+39. Yoda Speak
+40. Breathe Clock
+41. Fridge Notes
+42. World Map
+43. Color Caterpillar
+44. Color Chemistry
