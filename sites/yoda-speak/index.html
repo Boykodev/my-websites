@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Yoda Speak</title>
+	<link rel="stylesheet" href="/css/reset.css">
+	<link rel="stylesheet" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular.min.js"></script>
+	<script src="script.js" defer></script>
+</head>
+<body ng-app="app" ng-controller="mainCtrl">
+<header>
+	<h2>Yoda speak</h2>
+	<h3>How would Jedi Master Yoda say it?<br>Find out below!</h3>
+</header>
+
+<img src="assets/yoda.png" alt="Yoda" width="256" height="256">
+
+<div id="speak">
+	<textarea rows="4" cols="50" ng-model="user.input" placeholder="What want you me to say?"></textarea>
+	<button ng-click="submit()">say it!</button>
+	<div id="yoda-speak">{{user.output}}</div>
+</div>
+</body>
+</html>

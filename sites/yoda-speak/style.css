@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'Star Jedi';
+    src: url('/fonts/star-jedi/star-jedi.ttf');
+}
+
+body {
+	background-color: #537858;
+	text-align: center;
+}
+
+header {
+	color: #537858;
+	font: 23px 'Star Jedi', sans-serif;
+	text-shadow: -1px -1px 0 #ff6, 1px -1px 0 #ff6, -1px 1px 0 #ff6, 1px 1px 0 #ff6;
+}
+
+#speak {
+	width: 480px; height: 200px;
+	margin: auto;
+}
+
+#speak textarea {
+	border: none;
+	padding: 5px;
+	margin-bottom: 10px;
+	letter-spacing: 1px;
+	font: 20px 'Droid Sans', sans-serif;
+	box-shadow: 5px 5px 0px rgba(255,255,255,0.2);
+}
+
+#speak button {
+	width: 120px;
+	height: 40px;
+	padding: 0px;
+	color: #537858;
+	margin-bottom: 15px;
+	letter-spacing: 3px;
+	border-radius: 25px;
+	padding-bottom: 4px;
+	border: 1px solid #ff6;
+	background-color: #537858;
+	font: 20px 'Star Jedi', sans-serif;
+	text-shadow: -1px -1px 0 #ff6, 1px -1px 0 #ff6, -1px 1px 0 #ff6, 1px 1px 0 #ff6;
+}
+
+#speak button:active {
+    -webkit-transform: scale(0.95, 0.95);
+    -moz-transform: scale(0.95, 0.95);
+    -o-transform: scale(0.95, 0.95);
+    transform: scale(0.95, 0.95);
+}
+
+#speak button:hover {
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+#yoda-speak {
+	color: #537858;
+	letter-spacing: 3px;
+	font: 20px 'Star Jedi', sans-serif;
+	text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+}
