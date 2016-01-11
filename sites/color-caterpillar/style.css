@@ -1,0 +1,5 @@
+body {
+	cursor: pointer;
+	overflow: hidden;
+	background-image: url('assets/grass-seamless.jpg');
+}
