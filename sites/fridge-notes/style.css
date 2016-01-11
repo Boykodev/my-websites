@@ -1,0 +1,45 @@
+body {
+	background-image: url('assets/brushed-metal-seamless.jpg');
+}
+
+header {
+	font: 35px 'Permanent Marker';
+	line-height: 30px;
+	text-align: center;
+	letter-spacing: 2px;
+	color: rgba(0, 0, 0, 0.5);
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.handle {
+	position: absolute;
+	width: 50px; height: 360px;
+	left: 50px; top: 50%;
+	margin-top: -180px;
+	background-image: url('assets/handle.png');
+	background-color: rgba(0, 0, 0, 0.25);
+	box-shadow: 0px 0px 5px black;
+}
+
+.content {
+	position:absolute;
+	top:0px;
+	left:100px;
+	right:0px;
+	padding:0px;
+	margin:0px;
+	height:100%;
+}
+
+.jStickyNote textarea, .jStickyNote p {
+	font: 35px 'Permanent Marker';
+	letter-spacing: 2px;
+	color: black;
+	white-space: pre-line;
+	word-wrap: break-word;
+}
