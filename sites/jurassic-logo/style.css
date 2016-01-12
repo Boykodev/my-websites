@@ -1,0 +1,59 @@
+@font-face {
+	font-family: Tribeca;
+	src: url('/fonts/tribeca/tribeca.ttf');
+}
+
+body { background-color: antiquewhite; }
+
+header {
+	font: 100px Tribeca;
+	text-align: center;
+	letter-spacing: 3px;
+	color: black;
+}
+
+header span:nth-child(1) { letter-spacing: 5px; }
+
+header span:nth-child(2) { letter-spacing: -5px; }
+
+form { text-align: center; font: 50px Tribeca; }
+
+form p:nth-child(1) { margin-top: 25px; margin-bottom: 100px; }
+
+.jurassic.park { cursor: pointer; margin-bottom: 15px; }
+.jurassic.park:hover { color: darkorange; }
+
+.jurassic.world { cursor: pointer; }
+.jurassic.world:hover { color: darkblue; }
+
+.jurassic-park-logo, .jurassic-world-logo {
+	width: 800px;
+	height: 650px;
+	margin: auto;
+	display: none;
+}
+
+.jurassic-park-logo .left, .jurassic-world-logo .left {
+	width: 400px; height: 650px;
+	position: absolute;
+	cursor: pointer;
+}
+
+.jurassic-park-logo .right, .jurassic-world-logo .right {
+	width: 400px; height: 650px;
+	position: absolute;
+	margin-left: 400px;
+	cursor: pointer;
+}
+
+.jurassic-park-logo {
+	background-image: url('assets/jurassic-park-logo.png');
+	-webkit-transition: 1s;
+	transition: 1s;
+}
+
+.jurassic-world-logo {
+	background-image: url('assets/jurassic-world-logo.png');
+	-webkit-transition: 1s;
+	transition: 1s;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jurassic Logo</title>
+	<link rel="stylesheet" href="/css/reset.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="script.js" defer></script>
+</head>
+<body>
+<header>
+	<h2>Jurassic Logo</h2>
+</header>
+<form>
+	<p>Which one is better?</p>
+	<p class="jurassic park">Jurassic Park(1993)</p>
+	<p class="jurassic world">Jurassic World(2015)</p>
+</form>
+<div class="jurassic-park-logo">
+	<div class="left" onclick="flipLogo('left', 'park')"></div>
+	<div class="right" onclick="flipLogo('right', 'park')"></div>
+</div>
+<div class="jurassic-world-logo">
+	<div class="left" onclick="flipLogo('left', 'world')"></div>
+	<div class="right" onclick="flipLogo('right', 'world')"></div>
+</div>
+</body>
+</html>
