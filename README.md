@@ -48,3 +48,12 @@ Order the websites were created:
 42. World Map
 43. Color Caterpillar
 44. Color Chemistry
+45. Sorting Hat
+46. Snitch Seeker
+47. 3D Waves
+48. 3D Donut
+49. Snake
+50. Snake 2
+51. Jurassic Logo
+52. Caesar Cipher
+53. Morse Code
