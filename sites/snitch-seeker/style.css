@@ -1,0 +1,54 @@
+@font-face {
+	font-family: 'Harry P';
+	src: url('/fonts/harry-p/harry-p.ttf');
+}
+
+body {
+    height: 100%;
+    background: -webkit-linear-gradient(#4cb8c4, #3cd3ad);
+    background: -o-linear-gradient(#4cb8c4, #3cd3ad);
+    background: -moz-linear-gradient(#4cb8c4, #3cd3ad);
+    background: linear-gradient(#90dffe, #38a3d1);
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+header {
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+	font: 50px 'Harry P';
+	letter-spacing: 5px;
+    text-align: center;
+	color: orange;
+	margin-top: 5px;
+}
+
+#snitch {
+	width: 100px;
+	height: 75px;
+	position: absolute;
+	cursor: pointer;
+	background-size: 100% 100%;
+    background-repeat: no-repeat;
+	background-image: url('assets/snitch.gif');
+}
+
+.snitch-caught {
+	font: 60px 'Harry P';
+	text-align: center;
+	display: none;
+}
+
+.snitch-caught img {
+	-webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, .5);
+    -moz-box-shadow: 5px 5px 15px rgba(0, 0, 0, .5);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .5);
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
