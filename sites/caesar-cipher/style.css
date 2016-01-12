@@ -1,0 +1,30 @@
+body {
+	background-color: grey;
+	text-align: center;
+}
+
+header {
+	color: white;
+	font: 80px 'Marcellus SC';
+}
+
+textarea {
+	font: 40px 'Marcellus SC';
+	padding-left: 5px;
+}
+
+.alphabet {
+	color: white;
+	font: 30px 'Nova Mono';
+	letter-spacing: 10px;
+}
+
+form input {
+	width: 690px;
+	margin-right: 8px;
+}
+
+textarea {
+	border: none;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}

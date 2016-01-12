@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Caesar Cipher</title>
+	<link rel="stylesheet" href="/css/reset.css">
+	<link rel="stylesheet" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Marcellus+SC|Nova+Mono' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="script.js" defer></script>
+</head>
+<body>
+<header>
+	<h2>Caesar Cipher</h2>
+</header>
+<form>
+	<textarea name="original" id="original-text" oninput="caesarEncrypt()" cols="30" rows="5">This is Caesar Cipher!</textarea>
+
+	<div class="alphabet original">ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
+	<input type="range" name="shift" oninput="setCipher(this.value);" value="0" min="0" max="25">
+	<div class="alphabet cipher">ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
+
+	<textarea name="cipher" id="cipher-text" cols="30" rows="5">This is Caesar Cipher!</textarea>
+</form>
+</body>
+</html>
