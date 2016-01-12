@@ -1,0 +1,107 @@
+@font-face {
+	font-family: Nokian;
+	src: url('/fonts/nokian/nokian.ttf');
+}
+
+body { background-color: skyblue; }
+
+.phone {
+	position: absolute;
+	width: 500px; height: 920px;
+	left: 50%; top: 50%;
+	margin-left: -250px;
+	margin-top: -460px;
+	background-image: url('assets/nokia-3310.png');
+}
+
+.phone button {
+	border: none;
+	position: absolute;
+	background-color: transparent;
+}
+
+.btn-speed-up {
+	border-radius: 15px;
+	width: 50px; height: 50px;
+	margin-left: 320px;
+	margin-top: 480px;
+}
+
+.btn-speed-down {
+	border-radius: 15px;
+	width: 50px; height: 50px;
+	margin-left: 270px;
+	margin-top: 515px;
+}
+
+.btn-up {
+	border-radius: 15px;
+	width: 90px; height: 50px;
+	margin-left: 200px;
+	margin-top: 588px;
+}
+
+.btn-down {
+	border-radius: 15px;
+	width: 90px; height: 50px;
+	margin-left: 200px;
+	margin-top: 710px;
+}
+
+.btn-left {
+	border-radius: 15px;
+	width: 90px; height: 50px;
+	margin-left: 100px;
+	margin-top: 636px;
+}
+
+.btn-right {
+	border-radius: 15px;
+	width: 90px; height: 50px;
+	margin-left: 300px;
+	margin-top: 634px;
+}
+
+.btn-ok {
+	border-radius: 15px 15px 50% 50% ;
+	width: 150px; height: 50px;
+	margin-left: 168px;
+	margin-top: 460px;
+}
+
+.screen {
+	position: absolute;
+	width: 270px; height: 190px;
+	margin-left: 105px;
+	margin-top: 242px;
+	background-color: lightgreen;
+	z-index: -1;
+}
+
+.title-screen {
+	position: absolute;
+	margin-left: 16px;
+	margin-top: 3px;
+	text-align: center;
+	width: 240px; height: 180px;
+	font-family: Nokian;
+	display: none;
+}
+
+.title-screen h2 {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	font-size: 40px;
+}
+
+.title-screen p {
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+
+canvas {
+	border: 1px solid #25262d;
+	position: absolute;
+	margin-left: 16px;
+	margin-top: 3px;
+}
