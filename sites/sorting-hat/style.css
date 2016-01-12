@@ -1,0 +1,91 @@
+@font-face {
+	font-family: 'Harry P';
+	src: url('/fonts/harry-p/harry-p.ttf');
+}
+
+body {
+	font-family: 'Harry P', cursive;
+	background-color: darkcyan;
+}
+
+.sorting-hat-container {
+	margin: 25px auto;
+	text-align: center;
+	font-size: 42px;
+	width: 500px; height: 400px;
+}
+
+.question-box {
+	font-size: 40px;
+	display: none;
+}
+
+.question-text {
+	color: gold;
+	font-weight: bold;
+	text-indent: 55px;
+	margin: 15px 0px 30px 15px;
+}
+
+input[type=radio] {
+	position:absolute;
+	z-index:-1000;
+	left:-1000px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height:1px;
+	width:1px;
+	margin:-1px;
+	padding:0;
+	border:0;
+}
+
+input[type=radio] + label {
+	padding-left:55px;
+	display:inline-block;
+	line-height:50px;
+	background-repeat:no-repeat;
+	background-image: url('assets/empty.png');
+	font-size:50px;
+	vertical-align:middle;
+	cursor:pointer;
+}
+
+input[type=radio]:checked + label {
+	background-image: url('assets/snitch.png');
+}
+
+label {
+	color: lightgreen;
+	margin-left: 10px;
+	margin-bottom: 30px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.btn {
+	width: 125px;
+	height: 50px;
+	display: block;
+	margin: auto;
+	border: none;
+	border-radius: 15px;
+	letter-spacing: 3px;
+	font: 35px 'Harry P', cursive;
+	background-color: ghostwhite;
+}
+
+.btn:active {
+	-webkit-transform: scale(0.95, 0.95);
+    -moz-transform: scale(0.95, 0.95);
+    -o-transform: scale(0.95, 0.95);
+	transform: scale(0.95, 0.95);
+}
+
+.take-btn { margin-top: 100px; }
+
+.next-btn { display: none; }
