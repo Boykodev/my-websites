@@ -1,0 +1,22 @@
+body {
+  background-image: url('assets/homer.png');
+  background-position: center;
+  background-repeat: no-repeat;
+	background-color: #444;
+	overflow: hidden;
+}
+
+header {
+    position: absolute; text-align: center;
+    width: 640px; height: 160px;
+    left: 50%; margin-left: -320px;
+}
+
+header {
+    font: 100px 'Rock Salt';
+    text-decoration: none;
+    color: rgba(255, 105, 180, 0.75);
+    text-shadow: rgb(153, 153, 153) 0px 1px 0px, rgb(136, 136, 136) 0px 2px 0px,
+    rgb(119, 119, 119) 0px 3px 0px, rgb(102, 102, 102) 0px 4px 0px, rgb(85, 85, 85) 0px 5px 0px,
+    rgb(68, 68, 68) 0px 6px 0px, rgb(51, 51, 51) 0px 7px 0px, rgb(20, 20, 55) 0px 8px 7px;
+}
