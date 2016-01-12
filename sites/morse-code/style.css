@@ -1,0 +1,60 @@
+body {
+	text-align: center;
+	background-color: lightseagreen;
+}
+
+header {
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+header h2 {
+	color: #E63E62;
+	font: bold 70px Average;
+	text-shadow: 4px 4px 0px rgba(255, 255, 255, 0.9);
+}
+
+#morse-text {
+	border: none;
+	resize: none;
+	margin: auto;
+	width: 800px;
+	height: 300px;
+	padding: 10px;
+	display: block;
+	font-size: 20px;
+	border-radius: 15px;
+	background-color: white;
+	font: bold 20px 'Source Code Pro';
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+#source-text {
+	border: none;
+	resize: none;
+	padding: 10px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border-radius: 15px;
+	font: 20px 'Source Code Pro';
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+button {
+	margin: auto;
+	color: white;
+	width: 200px;
+	height: 200px;
+	display: block;
+	font: 75px Average;
+	border-radius: 50%;
+	border: 3px solid white;
+	background-color: #E63E62;
+}
+
+button:active {
+	-webkit-transform: scale(0.95, 0.95);
+    -moz-transform: scale(0.95, 0.95);
+    -o-transform: scale(0.95, 0.95);
+    transform: scale(0.95, 0.95);
+}
