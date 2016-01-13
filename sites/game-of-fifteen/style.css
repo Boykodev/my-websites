@@ -1,0 +1,44 @@
+body { background-color: antiquewhite; }
+
+header {
+	font: 80px Chewy;
+	text-align: center;
+	text-shadow: 0px 0px 5px white, 0px 0px 5px white, 0px 0px 5px white,
+				 0px 0px 5px white, 0px 0px 5px white, 0px 0px 5px white;
+}
+
+.board {
+	position: absolute;
+	width: 509px; height: 509px;
+	left: 50%; top: 50%;
+	margin-left: -255px;
+	margin-top: -255px;
+	border-radius: 15px;
+	box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+	border: 2px solid black;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	background-image: url('assets/wood-texture.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.tile {
+	position: absolute;
+	width: 125px; height: 125px;
+	border-radius: 15px;
+	text-align: center;
+	font: 80px Chewy;
+	cursor: pointer;
+	padding-top: 5px;
+	border: 2px solid black;
+	background-image: url('assets/marble-texture.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.empty { opacity: 0; }
