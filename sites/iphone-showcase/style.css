@@ -1,0 +1,137 @@
+.left.carousel-control { border-radius: 15px 0px 0px 15px; }
+.right.carousel-control { border-radius: 0px 15px 15px 0px; }
+
+.carousel-indicators li { background-color: #669966; }
+.carousel-indicators .active { background-color: #FF7600; }
+
+.carousel-inner .item img,
+.carousel-inner .item a img {
+	width: 50%;
+	margin: 0px 100% 75px;
+}
+
+.carousel-caption {
+	bottom: -30px;
+	font-size: 20px;
+	text-shadow: rgb(0, 0, 0) 0px 0px 1px, rgb(32, 32, 32) 0px 0px 2px,
+    rgb(64, 64, 64) 0px 0px 3px, rgb(128, 128, 128) 0px 0px 4px;
+}
+
+header { text-align: center; }
+header h2 { font-size: 50px; }
+
+.item { height: 80vh; }
+
+/* Start of "Flipping" styles */
+
+.front, .back {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0; left: 0;
+}
+
+.front {
+    z-index: 2;
+    /* Firefox support */
+    transform: rotateY(0deg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.back {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80% 80%;
+}
+
+/* iPhone common styles */
+
+.iphone {
+	position: absolute;
+	width: 350px;
+	right: 50%; top: 0px;
+	margin-right: -175px;
+	margin-top: 25px;
+	-webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: rotateY(0deg);
+	transform: rotateY(0deg);
+    -webkit-transition: 1s;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.iphone:hover {
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+.front { width: 100%; height: 100%; }
+.back { width: 100%; height: 100%; }
+
+/* iPhone backgrounds styles */
+
+.item:nth-child(1) .iphone { height: 75%; }
+.item:nth-child(2) .iphone { height: 75%; }
+.item:nth-child(3) .iphone { height: 75%; }
+.item:nth-child(4) .iphone { height: 85%; }
+.item:nth-child(5) .iphone { height: 85%; }
+.item:nth-child(6) .iphone { height: 85%; }
+
+.iphone .front, .iphone .back {
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.item:nth-child(1) .iphone .front {
+	background-image: url('assets/iphone-2g-front.png');
+}
+
+.item:nth-child(1) .iphone .back {
+	background-image: url('assets/iphone-2g-back.png');
+}
+
+.item:nth-child(2) .iphone .front {
+	background-image: url('assets/iphone-3g-front.png');
+}
+
+.item:nth-child(2) .iphone .back {
+	background-image: url('assets/iphone-3g-back.png');
+}
+
+.item:nth-child(3) .iphone .front {
+	background-image: url('assets/iphone-4-front.png');
+}
+
+.item:nth-child(3) .iphone .back {
+	background-image: url('assets/iphone-4-back.png');
+}
+
+.item:nth-child(4) .iphone .front {
+	background-image: url('assets/iphone-5-front.png');
+}
+
+.item:nth-child(4) .iphone .back {
+	background-image: url('assets/iphone-5-back.png');
+}
+
+.item:nth-child(5) .iphone .front {
+	background-image: url('assets/iphone-5c-front.png');
+}
+
+.item:nth-child(5) .iphone .back {
+	background-image: url('assets/iphone-5c-back.png');
+}
+
+.item:nth-child(6) .iphone .front {
+	background-image: url('assets/iphone-6-front.png');
+}
+
+.item:nth-child(6) .iphone .back {
+	background-image: url('assets/iphone-6-back.png');
+}
