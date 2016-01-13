@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>World Clock</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/css/reset.css">
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Orbitron:500' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script src="script.js" defer></script>
+</head>
+<body>
+<header>
+	<h2>World Clock</h2>
+</header>
+<ul id="clock" class="clock-day">	
+   	<li id="sec"></li>
+   	<li id="hour" class="hour-day"></li>
+	<li id="min" class="min-day"></li>
+</ul>
+
+<div class="container">
+	<input type="text" class="cities" min="0" placeholder="Pick a city">
+</div>
+
+<div class="show-time"></div>
+</body>
+</html>
