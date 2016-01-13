@@ -1,0 +1,60 @@
+body {
+	background-image: url('assets/question-mark-texture.png');
+	font-family: 'Lobster';
+}
+
+header {
+	color: white;
+	text-align: center;
+	font-size: 80px;
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 125px;
+	white-space: nowrap;
+}
+
+.yes-container {
+	position: absolute;
+	width: 500px; height: 75px;
+	left: 50%; margin-left: -250px;
+}
+
+button {
+	color: white;
+	width: 200px; height: 75px;
+	font: 40px 'Lobster';
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+#no {
+	left: 50%; margin-left: 50px;
+	z-index: 10;
+}
+
+.results {
+	width: 500px; height: 500px;
+	margin: auto;
+	position: relative;
+}
+
+.yes-bar, .no-bar {
+	width: 200px;
+	position: absolute;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.yes-bar {
+	bottom: 0px;
+	left: 25px;
+	text-align: center;
+	color: white;
+	font-size: 64px;
+	background-color: #3fa854;
+}
+
+.no-bar {
+	bottom: 0px;
+	left: 275px;
+	background-color: #dd5050;
+}
