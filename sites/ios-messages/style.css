@@ -1,0 +1,134 @@
+body {
+  font-family: "Helvetica Neue", Arimo, sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+  height: 100vh;
+}
+
+header {
+  text-align: center;
+  font-size: 64px;
+}
+
+#showcase {
+  width: 600px;
+  height: 60%;
+  margin: 50px auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+#showcase div {
+  max-width: 255px;
+  word-wrap: break-word;
+  margin-bottom: 20px;
+  line-height: 24px;
+}
+
+.clear { clear: both; }
+
+.from-ys {
+  position: relative;
+  padding: 10px 20px;
+  color: white;
+  background: #0B93F6;
+  margin-right: 15px;
+  border-radius: 25px;
+  float: right;
+}
+.from-ys:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: -2px;
+  right: -7px;
+  height: 20px;
+  border-right: 20px solid #0B93F6;
+  border-bottom-left-radius: 16px 14px;
+  -webkit-transform: translate(0, -2px);
+  -moz-transform: translate(0, -2px);
+}
+.from-ys:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  bottom: -2px;
+  right: -56px;
+  width: 26px;
+  height: 20px;
+  background: white;
+  border-bottom-left-radius: 10px;
+  -webkit-transform: translate(-30px, -2px);
+  -moz-transform: translate(-30px, -2px);
+}
+
+.from-sb {
+  position: relative;
+  padding: 10px 20px;
+  background: #E5E5EA;
+  border-radius: 25px;
+  margin-left: 15px;
+  color: black;
+  float: left;
+}
+.from-sb:before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  bottom: -2px;
+  left: -7px;
+  height: 20px;
+  border-left: 20px solid #E5E5EA;
+  border-bottom-right-radius: 16px 14px;
+  -webkit-transform: translate(0, -2px);
+  -moz-transform: translate(0, -2px);
+}
+.from-sb:after {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  bottom: -2px;
+  left: 4px;
+  width: 26px;
+  height: 20px;
+  background: white;
+  -webkit-transform: translate(-30px, -2px);
+  -moz-transform: translate(-30px, -2px);
+  border-bottom-right-radius: 10px;
+}
+
+#message-box {
+  font-family: "Helvetica Neue", Arimo, sans-serif;
+  padding: 10px;
+}
+
+.dummy { visibility: hidden; }
+
+/* Removes this annoying button border in Firefox */
+button::-moz-focus-inner { padding: 0; border: 0; }
+
+button {
+  font-family: "Helvetica Neue", Arimo, sans-serif;
+  background-color: #E5E5EA;
+  width: 150px; height: 50px;
+  border-radius: 25px;
+  padding-right: 25px;
+  padding-left: 25px;
+  font-size: 18px;
+  border: none;
+}
+
+#btn-sb { margin-right: 10px; margin-top: 5px; }
+#btn-ys { margin-left: 10px; margin-top: 5px; }
+
+button:hover {
+  background-color: #0B93F6;
+  color: white;
+}
+
+button:active {
+  -webkit-transform: scale(0.95, 0.95);
+  -moz-transform: scale(0.95, 0.95);
+  -o-transform: scale(0.95, 0.95);
+  transform: scale(0.95, 0.95);
+}
