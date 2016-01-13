@@ -1,0 +1,46 @@
+body {
+	background: url('assets/compass-texture.jpg');
+}
+
+header {
+	text-align: center;
+	font: 100px 'Lobster Two';
+	text-shadow: 4px 4px 0px white;
+	background-color: rgba(0, 0, 0, 0.3);
+	padding-bottom: 15px;
+}
+
+.question {
+	opacity: 0.90;
+	width: 500px;
+	padding: 0px 5px;
+	font: 50px 'Lobster Two';
+	border: 8px solid pink;
+	border-radius: 25px;
+	text-align: center;
+	margin: 50px auto 63px;
+	text-shadow: 2px 2px 0px white;
+	background-color: mediumaquamarine;
+}
+
+.answers {
+	opacity: 0.95;
+	text-align: center;
+	height: 100px;
+}
+
+.btn {
+	font: 35px 'Lobster Two';
+	width: 250px; height: 100px;
+	border-radius: 25px;
+	border: 3px outset pink;
+	background-color: mediumaquamarine;
+	text-shadow: 1px 1px 0px white;
+	vertical-align: top;
+	line-height: 40px;
+	margin-left: 5px;
+}
+
+.btn:active { border: 3px inset pink; }
+
+.btn-1, .btn-3 { display: none; }
