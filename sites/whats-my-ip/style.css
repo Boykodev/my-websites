@@ -1,0 +1,58 @@
+header {
+    margin-top: 10px;
+    text-align: center;
+}
+
+header h1 { font: 43px 'Cutive Mono'; }
+
+.ip-container {
+    position: absolute;
+    width: 700px; height: 228px;
+    left: 50%; top: 50%;
+    margin-left: -350px;
+    margin-top: -114px;
+}
+
+.ip-container p {
+    text-align: center;
+    font: 43px 'Cutive Mono';
+}
+
+#ip {
+    text-align: center;
+    position: relative;
+    margin: 20px auto;
+    padding: 40px 0px 120px;
+    width: 700px; height: 60px;
+    font: 60px 'Cutive Mono';
+    background-color: #f8fafc;
+    box-shadow: 0 0 1px rgba(0,0,0,0.2), inset 0 0 50px rgba(0,0,0,0.1);
+}
+
+#ip:before, #ip:after {
+    position: absolute;
+    width: 40%;
+    height: 10px;
+    content: ' ';
+    left: 12px;
+    bottom: 12px;
+    background: transparent;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    z-index: -1;
+
+    -webkit-transform: skew(-5deg) rotate(-5deg);
+    -moz-transform: skew(-5deg) rotate(-5deg);
+    -ms-transform: skew(-5deg) rotate(-5deg);
+    -o-transform: skew(-5deg) rotate(-5deg);
+    transform: skew(-5deg) rotate(-5deg);
+}
+
+#ip:after {
+    left: auto;
+    right: 12px;
+    -webkit-transform: skew(5deg) rotate(5deg);
+    -moz-transform: skew(5deg) rotate(5deg);
+    -ms-transform: skew(5deg) rotate(5deg);
+    -o-transform: skew(5deg) rotate(5deg);
+    transform: skew(5deg) rotate(5deg);
+}
