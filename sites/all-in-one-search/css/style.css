@@ -1,0 +1,40 @@
+/* ========== HEADER STYLE ========== */
+header {
+  text-align: center;
+  font-family: Roboto; }
+  header h1.search {
+    font-size: 64px;
+    color: #3F85F4; }
+    header h1.search span:first-of-type {
+      color: #ED1C24; }
+    header h1.search span:last-of-type {
+      color: #7B0099; }
+
+/* ========== FORM STYLE ========== */
+form {
+  text-align: center; }
+  form input {
+    width: 500px;
+    height: 40px;
+    padding: 0px 5px;
+    border: 2px solid #A0A0A0;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    margin-right: 10px;
+    font: 25px Roboto; }
+  form button {
+    background: -webkit-linear-gradient(#f5f5f5, #f1f1f1);
+    background: -moz-linear-gradient(#f5f5f5, #f1f1f1);
+    background: -ms-linear-gradient(#f5f5f5, #f1f1f1);
+    background: -o-linear-gradient(#f5f5f5, #f1f1f1);
+    background: linear-gradient(#f5f5f5, #f1f1f1);
+    color: #A0A0A0;
+    margin: 10px;
+    font-size: 20px;
+    border: none;
+    padding: 15px; }
+    form button:hover {
+      outline: 1px solid #A0A0A0;
+      color: black; }
+
+/*# sourceMappingURL=style.css.map */
