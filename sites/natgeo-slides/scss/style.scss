@@ -1,0 +1,157 @@
+// Variables //
+$container-width: 900px;
+
+$slider-width: 720px;
+$slider-height: 400px;
+
+$control-width: 50px;
+
+$arrow-color: #00A4ED;
+
+@mixin no-select() {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@mixin scale($w, $h) {
+  -webkit-transform: scale($w, $h);
+  -moz-transform: scale($w, $h);
+  -o-transform: scale($w, $h);
+  transform: scale($w, $h);
+}
+
+@mixin gradient-bg($from, $to) {
+  background: -webkit-linear-gradient($from, $to);
+  background:    -moz-linear-gradient($from, $to);
+  background:     -ms-linear-gradient($from, $to);
+  background:      -o-linear-gradient($from, $to);
+  background:         linear-gradient($from, $to);
+}
+
+/* ========== CONTAINER STYLE ========== */
+
+div.slider-container {
+  width: $container-width;
+  height: $slider-height;
+  position: relative;
+  margin: auto;
+  @include no-select();
+}
+
+/* ========== SLIDER STYLE ========== */
+
+div#slider {
+  background: url("../assets/natgeo-logo.png") no-repeat center;
+  width: $slider-width;
+  height: $slider-height;
+  position: relative;
+  overflow: hidden;
+  float: left;
+
+  ul.slides {
+    display: block;
+    width: $slider-width;
+    height: $slider-height;
+    margin: 0;
+    padding: 0;
+
+    li.slide {
+      list-style-type: none;
+      float: left;
+      img {
+        width: $slider-width;
+        height: $slider-height;
+      }
+    }
+  }
+
+  .control.left, .control.right {
+    background-color: rgba(black, 0.25);
+    width: $control-width;
+    height: $slider-height;
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    font-size: 64px;
+    line-height: $slider-height;
+    cursor: pointer;
+  }
+  .control.left {
+    top: 0px;
+    left: 0px;
+    &:before {
+      content: '<';
+      font-family: 'Lato', sans-serif;
+      font-weight: 100;
+    }
+  }
+  .control.right {
+    top:0px;
+    right:0px;
+    &:before {
+      content: '>';
+      font-family: 'Lato', sans-serif;
+      font-weight: 100;
+    }
+  }
+}
+
+/* ========== SIDE-SLIDER STYLE ========== */
+
+.more {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  cursor: pointer;
+  width: $container-width - $slider-width - 50;
+  height: $slider-height / 20;
+  background: url("../assets/triangle-down.png");
+  background-size: 100% 100%;
+  &:active {
+    @include scale(0.9, 0.9);
+  }
+}
+
+.side-slider {
+  width: $container-width - $slider-width;
+  height: $slider-height - 30;
+  float: left;
+  overflow: hidden;
+
+  ul.slides {
+    margin: 0;
+    padding: 0;
+    li.slide {
+      list-style-type: none;
+      margin: 2px 10px 20px;
+      cursor: pointer;
+
+      img {
+        width: $container-width - $slider-width - 20;
+        height: $slider-height / 4;
+        &:hover {
+          outline: 2px solid $arrow-color;
+        }
+      }
+
+    }
+
+  }
+
+}
+
+/* ========== PAGE STYLE ========== */
+
+header {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  @include gradient-bg(#fff, lightgrey);
+  background-attachment: fixed;
+}
