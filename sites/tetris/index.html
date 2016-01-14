@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Tetris</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript">$(document).bind("mobileinit", function(){$.extend(  $.mobile , {autoInitializePage: false})});</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+  <script src="js/nodoubletapzoom.js" defer></script>
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <div id="tetris">
+    <div id="menu">
+      <p id="title"><span class="cap">T</span>ETRIS</p>
+      <p><canvas id="upcoming"></canvas></p>
+      <p id="highscore-wrap">HIGHSCORE <span id="highscore">00000</span></p>
+      <p id="score-wrap">SCORE <span id="score">00000</span></p>
+      <p id="level-wrap">LEVEL <span id="level">0</span></p>
+      <p id="lines-wrap">LINES <span id="lines">0</span></p>
+      <p id="start"><span class="cap">S</span>TART</p>
+      <div id="d-pad">
+        <div class="btn" id="up"></div>
+        <div class="btn" id="left"></div>
+        <div class="btn" id="right"></div>
+        <div class="btn" id="down"></div>
+      </div>
+    </div>
+    <canvas id="canvas">
+      If you can read this, your browser doesn't support the canvas element. Please upgrade to a better browser.
+    </canvas>
+  </div>
+</body>
+</html>
