@@ -1,0 +1,82 @@
+/* This is the first site I have styled with SASS */
+
+$bg-color: #f9f9f9;
+$pan-height: 400px;
+
+@mixin multiple-borders() {
+	-webkit-box-shadow:
+            0px 0px 0px 2px rgba(0,0,0,0.6),
+                0px 0px 0px 14px #fff,
+                0px 0px 0px 18px rgba(0,0,0,0.2),
+                6px 6px 8px 17px #555;
+   
+     -moz-box-shadow:
+            0px 0px 0px 2px rgba(0,0,0,0.6),
+                0px 0px 0px 14px #fff,
+                0px 0px 0px 18px rgba(0,0,0,0.2),
+                6px 6px 8px 17px #555;
+   
+          box-shadow:
+            0px 0px 0px 2px rgba(0,0,0,0.6),
+                0px 0px 0px 14px #fff,
+                0px 0px 0px 18px rgba(0,0,0,0.2),
+                6px 6px 8px 17px #555;
+}
+
+@mixin animation($name, $duration) {
+	-webkit-animation: $name $duration infinite;
+	-webkit-animation-timing-function: linear;
+	animation: $name $duration infinite;
+    animation-timing-function: linear;
+}
+
+body {
+	background-color: $bg-color;
+	font-family: 'Lobster', cursive;
+}
+
+.panorama {
+	width: $pan-height * 2;
+	height: $pan-height;
+	margin: 30px auto 50px;
+	background: url('../assets/preload.jpg');
+	background-size: auto 460px;
+	background-position: -30px -30px;
+	@include multiple-borders();
+	@include animation(scroll, 360s);
+	cursor: url('../assets/camera.png'), auto;
+	text-align: center;
+	&:hover {
+		-webkit-animation-play-state: paused;
+		animation-play-state: paused;
+	}
+}
+
+.paused {
+	-webkit-animation-play-state: paused;
+	animation-play-state: paused;
+}
+
+header {
+	text-align: center;
+	h1 {
+		font-size: $pan-height * 0.20;
+	}
+}
+
+.tip {
+	font-size: $pan-height * 0.10;
+	text-align: center;
+}
+
+@-webkit-keyframes scroll {
+    0%   {background-position: -30px -30px;}
+    50%  {background-position: -20000px -30px;}
+    100% {background-position: -30px -30px;}
+}
+
+@keyframes scroll {
+    0%   {background-position: -30px -30px;}
+    50%  {background-position: -20000px -30px;}
+    100% {background-position: -30px -30px;}
+}
